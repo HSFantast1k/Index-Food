@@ -209,7 +209,13 @@ body {
     justify-content: space-around;
     padding-left: 30px;
     color: #fff;
+    transition: all .5s;
 }
+
+.popular__item:hover {
+    opacity: .8;
+}
+
 
 .popular__item-title {
     font-weight: 500;
@@ -272,6 +278,11 @@ body {
     height: 182px;
     background-repeat: no-repeat;
     padding: 21px;
+    transition: all .5s;
+}
+
+.food-delivery__item:hover {
+    opacity: .8;
 }
 
 .food-delivery__item-title {
