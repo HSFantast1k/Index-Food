@@ -1,4 +1,4 @@
-*,
+    *,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -520,11 +520,31 @@ body {
 
 
 @media (max-width: 1240px) {
+    .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
     .popular__inner {
         display: block;
     }
     .popular__item {
         margin: 35px auto;
+        padding: 50px 0 50px 30px;
+        width: 80%;
+        border-radius: 30px;
+    }
+    .food-delivery__box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .food-delivery__item {
+        margin: 0 auto;
+    }
+    .categories__tabs-content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .categories__content-item {
+        margin: 25px;
     }
 }
 
@@ -543,8 +563,21 @@ body {
     .slider__item {
         padding: 50px 0 0 50px;
     }
+    .categories__tab + .categories__tab {
+        margin-left: 40px;
+    }
 }
 
+@media (max-width: 980px) {
+
+    .food-delivery__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    .title {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
 
 @media (max-width: 768px) {
     .slider__item {
@@ -554,6 +587,42 @@ body {
         font-size: 40px;
         line-height: 41px;
         max-width: 380px;
+    }
+    .categories__tab + .categories__tab {
+        margin-left: 30px;
+    }
+    .food-delivery__item-title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 648px) {
+    .title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .popular__item {
+        width: 100%;
+        background-position: center;
+        padding: 0;
+        padding-left: 30px;
+    }
+    .food-delivery__box {
+        grid-template-columns: 1fr;
+    }
+    .categories__tabs {
+        text-align: center;
+    }
+    .categories__tab {
+        display: block;
+    }
+    .categories__tab + .categories__tab {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .categories__link {
+        padding: 16px 60px 15px;
     }
 }
 
@@ -567,10 +636,21 @@ body {
     line-height: 38px;
     max-width: 360px;
     }
+    .popular__item {
+        margin: 35px auto;
+    }
+    .food-delivery__item-title {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 
 
 @media (max-width: 380px) {
+    .title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
     .header__link {
         padding: 15px 20px;
     }
