@@ -452,6 +452,7 @@ body {
 .benefits__box {
     display: flex;
     justify-content: space-between;
+    padding: 0 25px;
 }
 .benefits__item {
     padding: 32px 15px 25px;
@@ -546,9 +547,19 @@ body {
     .categories__content-item {
         margin: 25px;
     }
+    .benefits__box {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefits__item {
+        margin: 25px;
+    }
 }
 
 @media (max-width: 1050px) {
+    .section-page {
+        margin-bottom: 80px;
+    }
     .header__inner {
         flex-wrap: wrap;
     }
@@ -595,9 +606,28 @@ body {
         font-size: 18px;
         line-height: 21px;
     }
+    .footer__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer__list {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .footer__list-link {
+        margin: 0;
+    }
+    .footer__list-item + .footer__list-item{
+        margin-left: 15px;
+    }
 }
 
 @media (max-width: 648px) {
+    .section-page {
+        margin-bottom: 50px;
+    }
     .title {
         font-size: 24px;
         margin-bottom: 32px;
@@ -624,6 +654,15 @@ body {
     .categories__link {
         padding: 16px 60px 15px;
     }
+    .categories__content-item,
+    .categories__item-img {
+        width: 100%;
+    }
+    .categories__item-title,
+    .categories__item-text {
+        width: 100%;
+        padding: 0 15px;
+    }
 }
 
 
@@ -643,6 +682,23 @@ body {
         font-size: 16px;
         line-height: 18px;
     }
+    .categories__item-btn {
+        padding: 12px 18px 13px;
+    }
+    .categories__content-item {
+        margin: 25px 0;
+    }
+    .footer__list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__list-item + .footer__list-item{
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .footer__logo-img {
+        width: 100%;
+    }
 }
 
 
@@ -656,5 +712,15 @@ body {
     }
     .header__btn {
         margin-left: 10px;
+    }
+    .footer__inner {
+        flex-direction: column;
+    }
+    .footer__solial-img {
+        margin: 0 15px;
+        width: 36px;
+    }
+    .footer__social {
+        margin-top: 15px;
     }
 }
